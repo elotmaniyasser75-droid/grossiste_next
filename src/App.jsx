@@ -10,7 +10,7 @@ import Dashboard from './views/Dashboard';
 import ClientsList from './views/clients/ClientsList';
 import ClientDetail from './views/clients/ClientDetail';
 import ProduitsList from './views/produits/ProduitsList';
-import StockOverview from './views/stock/StockOverview';
+import StockList from './views/stock/StockList';
 import CommandesList from './views/commandes/CommandesList';
 import CommandeDetail from './views/commandes/CommandeDetail';
 import CommandeCreate from './views/commandes/CommandeCreate';
@@ -18,8 +18,8 @@ import LivraisonsList from './views/livraisons/LivraisonsList';
 import LivraisonDetail from './views/livraisons/LivraisonDetail';
 import BonLivraison from './views/livraisons/BonLivraison';
 import PaiementsList from './views/paiements/PaiementsList';
-import RapportsList from './views/rapports/RapportsList';
-import BilansList from './views/bilans/BilansList';
+import Rapports from './views/rapports/Rapports';
+import BilansWorkspace from './views/bilans/BilansWorkspace';
 import Parametres from './views/Parametres';
 
 function Layout({ children }) {
@@ -49,7 +49,7 @@ export default function App() {
               <Route path="/clients/:id" element={<ClientDetail />} />
               
               <Route path="/produits" element={<ProduitsList />} />
-              <Route path="/stock" element={<StockOverview />} />
+              <Route path="/stock" element={<StockList />} />
               
               <Route path="/commandes" element={<CommandesList />} />
               <Route path="/commandes/nouveau" element={<CommandeCreate />} />
@@ -61,9 +61,9 @@ export default function App() {
               
               <Route path="/paiements" element={<PaiementsList />} />
               
-              <Route path="/rapports" element={<RapportsList />} />
+              <Route path="/rapports" element={<Rapports />} />
               
-              <Route path="/bilans" element={<BilansList />} />
+              <Route path="/bilans" element={<BilansWorkspace />} />
               
               <Route path="/parametres" element={<Parametres />} />
             </Routes>
